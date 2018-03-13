@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -5,17 +6,16 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
-import { ChatComponent} from './chat/chat.component';
+import { ChatComponent, LoginComponent, GuestComponent} from './chat/chat.component';
 import { RoutingModule } from './routing.module';
-import {UserProfileComponent} from './user-profile/user-profile.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent,
+    LoginComponent,
+    GuestComponent,
     ChatComponent
   ],
   imports: [
@@ -27,6 +27,6 @@ import {UserProfileComponent} from './user-profile/user-profile.component'
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [UserProfileComponent]
+  entryComponents: [LoginComponent, GuestComponent]
 })
 export class AppModule { }
