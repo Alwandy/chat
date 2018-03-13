@@ -1,4 +1,3 @@
-/** Following LUIX AVILES EXAMPLE - https://github.com/luixaviles/socket-io-typescript-chat/blob/master/client/src/app/shared/shared.module.ts  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
@@ -8,9 +7,7 @@ import { MaterialModule } from './material/material.module';
     CommonModule,
     MaterialModule
   ],
-  exports: [ 
-    MaterialModule 
-  ],
+  exports: [MaterialModule],
   declarations: []
 })
 export class SharedModule { }

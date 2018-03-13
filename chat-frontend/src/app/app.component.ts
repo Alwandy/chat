@@ -12,4 +12,4 @@ export class AppComponent implements OnInit {
 
   private initModel(): void {
   }
-} 
+}
